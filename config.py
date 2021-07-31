@@ -7,7 +7,7 @@ load_dotenv()
 SESSION_NAME = getenv("SESSION_NAME", "")
 BOT_TOKEN = getenv("")
 
-API_ID = int(getenv(""))
+API_ID = int(os.environ.get("API_ID", ''))
 API_HASH = getenv("")
 
 DURATION_LIMIT = int(getenv("DURATION_LIMIT", ""))
